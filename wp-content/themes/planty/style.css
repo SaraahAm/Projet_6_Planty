@@ -1,0 +1,95 @@
+/* 
+Theme Name:  Planty
+Theme URI:   http://planty.local/
+Description: Thème Planty basé sur le thème Hello Elementor
+Author:      Ammari Sarah
+Author URI:  http://planty.local/
+Template:    hello-elementor
+Version:     2.8.1
+License:     GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags:        boisson, energisant, naturel
+Text Domain: Planty
+*/
+
+
+
+/* This styles the submit buttons */
+.wpf-center .wpforms-submit-container  {
+    display: inline-block;
+    text-align: center;
+    width: 100% !important;
+}
+
+/* This styles the submit buttons -nous contacter- */
+
+#wpforms-215-field_4 {
+	height : 300px;
+}
+
+#wpforms-submit-215 {
+	font-family: syne;
+	padding : 20px 60px 35px 60px;
+}
+
+#wpforms-submit-215:hover {
+	background-color : #C02E44;
+}
+
+/* This styles the submit buttons -commander- */
+
+#wpforms-submit-548 {
+	font-family: syne;
+  	padding : 20px 40px 35px 40px;
+	margin-top: 50px;
+}
+
+#wpforms-submit-548:hover {
+	background-color : #C02E44;
+}
+
+
+/* wp form commande */
+
+.elementor-element-0a51679 {
+	border-left : 1px solid white;
+	padding-left: 9px;
+}
+
+#wpforms-548-field_1-container {
+	padding-right: 50px;
+}
+
+#wpforms-548-field_4-container {
+	border-left : 1px solid white;
+	padding-left: 70px
+}
+
+#wpforms-548-field_2-container {
+	padding-right: 50px;
+}
+
+#wpforms-548-field_5-container {
+	border-left : 1px solid white;
+	padding-left: 70px
+}
+
+#wpforms-548-field_3-container {
+		padding-right: 50px;
+}
+
+#wpforms-548-field_6-container {
+	border-left : 1px solid white;
+	padding-left: 70px
+}
+
+/**** Responsive ****/ 
+
+@media (max-width: 768px) {
+	.elementor-element-0a51679 {
+			display: none;
+	}		
+	.elementor-element-1de7c29 {
+			display: none;
+	}
+}
