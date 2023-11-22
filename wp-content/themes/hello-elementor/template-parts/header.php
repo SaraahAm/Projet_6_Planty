@@ -16,9 +16,8 @@ $header_nav_menu = wp_nav_menu( [
 	'echo' => false,
 ] );
 ?>
-
+coucou
 <header id="site-header" class="site-header" role="banner">
-
 	<div class="site-branding">
 		<?php
 		if ( has_custom_logo() ) {

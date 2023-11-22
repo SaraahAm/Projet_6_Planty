@@ -13,8 +13,13 @@ function theme_enqueue_styles()
 add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
 
 function add_extra_item_to_nav_menu($items, $args) {
-    if (is_user_logged_in() && $args->menu_id=="menu-1-b457354") {
-        $items .= '<li class="menu-item"><a class="hfe-menu-item" href="'. esc_url(admin_url()) .'">Admin</a></li>';
+    if (is_user_logged_in() && $args->theme_location == 'menu-1') {
+        $admin_link = '<li class="menu-item"><a class="hfe-menu-item" href="'. esc_url(admin_url()) .'">Admin</a></li>';
+        $items_array = explode( '</li>', $items ); 
+        array_splice( $items_array, 1, 0, $admin_link ); 
+        $items = implode( '</li>', $items_array );
     }
     return $items;
 }
+
+

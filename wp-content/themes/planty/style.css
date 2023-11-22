@@ -83,7 +83,59 @@ Text Domain: Planty
 	padding-left: 70px
 }
 
+/** Header **/ 
+
+#site-header {
+	background-color: white;
+	display: block;
+	justify-content: flex-end;
+}
+
+.site-navigation a {
+	color: black;
+}
+
+.site-navigation a:hover {
+	font-weight: 700;
+}
+
+#menu-item-935 {
+	background-color: #DC9F96;
+	font-weight: 700;
+	margin: -16px 0 -16px 15px;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+}
+
+#menu-item-935 a {
+	color: white;
+}
+
+#menu-item-935:hover {
+	background-color: #C02E44;
+}
+
+/** Footer **/
+
+#site-footer {
+	background-color: white;
+}
+
+.text {
+	color: black;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px 15px 0px;
+}
+
+.text:hover {
+	font-weight: 700;
+}
+
 /**** Responsive ****/ 
+
+
 
 @media (max-width: 768px) {
 	.elementor-element-0a51679 {

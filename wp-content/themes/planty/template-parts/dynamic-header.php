@@ -26,27 +26,8 @@ $header_nav_menu = wp_nav_menu( [
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr( hello_get_header_layout_class() ); ?>" role="banner">
 	<div class="header-inner">
 		<div class="site-branding show-<?php echo esc_attr( hello_elementor_get_setting( 'hello_header_logo_type' ) ); ?>">
-			<?php if ( has_custom_logo() && ( 'title' !== hello_elementor_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
-				<div class="site-logo <?php echo esc_attr( hello_show_or_hide( 'hello_header_logo_display' ) ); ?>">
-					<?php the_custom_logo(); ?>
-				</div>
-			<?php endif;
-
-			if ( $site_name && ( 'logo' !== hello_elementor_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
-				<h1 class="site-title <?php echo esc_attr( hello_show_or_hide( 'hello_header_logo_display' ) ); ?>">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr__( 'Home', 'hello-elementor' ); ?>" rel="home">
-						<?php echo esc_html( $site_name ); ?>
-					</a>
-				</h1>
-			<?php endif;
-
-			if ( $tagline && ( hello_elementor_get_setting( 'hello_header_tagline_display' ) || $is_editor ) ) : ?>
-				<p class="site-description <?php echo esc_attr( hello_show_or_hide( 'hello_header_tagline_display' ) ); ?>">
-					<?php echo esc_html( $tagline ); ?>
-				</p>
-			<?php endif; ?>
+			<a href="http://planty.local" img src="../img/Logo.png" alt="Logo Planty">
 		</div>
-
 		<?php if ( $header_nav_menu ) : ?>
 			<nav class="site-navigation <?php echo esc_attr( hello_show_or_hide( 'hello_header_menu_display' ) ); ?>">
 				<?php
